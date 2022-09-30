@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfólio|Gustavo Muniz</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    </head>
+
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="" class="logo">
+                    <ul>
+                        <li><a href="#header">Início</a></li>
+                        <li><a href="#sobre-mim">Sobre Mim</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                    </ul>
+                </nav>
+                <div class="header-text">
+                    <h1>me chamo<br><span>Gustavo Muniz</span></h1>
+                </div>
+            </div>
+        </div>
+
+<!--------sobre-mim----------->
+
+        <div id="sobre-mim">
+            <div class="container">
+                <div class="row">
+                    <div class="sobre-mim-1">
+                        <img src="eu.png">
+                    </div>
+                    <div class="sobre-mim-2">
+                        <h1 class="sub-titulo">Sobre Mim</h1>
+                        <p>     Tenho 16 anos, e desde 2018 tenho estudado de tudo um pouco, desde ethical hacking, design, desenvolvimento web, desenvolvimento de jogos e até edição de vídeo. Já procurei falhas em sites de leilão, de investimentos e também participei de alguns <span>capture the flag</span> com amigos.<br>   A curiosidade sempre foi o meu combustível, eu gosto de "fuçar" tudo que toco, </p>
+
+                        <div class="tab-titulos">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('estudos')">Estudos</p>
+                        </div>
+
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Design de interfaces Web/App </li>
+                                <li><span>Desenvolvimento Web</span><br>Desenvolver aplicações Web(como está).</li>
+                                <li><span>Ethical Hacking</span><br>Bug hunter de falhas em aplicações Web.</li>
+                                <li><span>Arduino/ESP</span><br>Desenvolver programas para microcontroladores como ESP e o Arduino.</li>
+                                <li><span>Photoshop/Illustrator</span><br>Edição, manipulação de imagem e ilustração com os respectivos programas.</li>
+                                <li><span>Blender</span><br>Modelar em 3D utilizando blender.</li>
+                                <li><span>Desenvolvimento de jogos</span><br>Desenvolver jogos usando Unity, Game Maker, Unreal Engine e programando em java.</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="estudos">
+                            <ul>
+                                <li><span>TECPUC</span><br>Atualmente em curso Técnico de Informática na TECPUC.</li>
+                                <li><span>Website Hacking/Penetration Testing</span><br>Curso de Pentesting feito na Zsecurity(certificado no fial da página).</li>
+                                <li><span>Network Hacking Continued - Intermediate to Advanced</span><br>Curso de Networking e Hacking feito na Zsecurity(certificado no final da página).</li>
+                                <li><span>Desenvolvimento de Jogos</span><br>Curso de criação de jogos da Danki Code, que além aprender a programar em Java, C#, C++, aprender a utilizar Unity e Unreal Engine, também tem conteúdos de modelagem 3D, pixelart, marketing e Design de jogos(certificado no final da página).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!----------------Certificados-------------------->
+        <div id="certificados">
+            <div class="container">
+                <h1 class="sub-titulo">Certificados</h1>
+                <div class="lista-certificados">
+                    <div class="certificado">
+                        <img src="dankicode.png">
+                    </div>
+                    <div class="certificado">
+                        <img src="web.png">
+                    </div>
+                    <div class="certificado">
+                        <img src="network.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-------------Projetos--------------->
+
+        <div id="projetos">
+            <div class="container">
+                <h1 class="sub-titulo">Projetos</h1>
+                <div class="lista-projetos">
+                    <div class="projeto">
+                        <img src="vulnscan01.png">
+                        <div class="icone">
+                            <h3>VulnScan01</h3>
+                            <p>Um scanner de vulnerabilidades feito em python.</p>
+                            <a href="https://github.com/malware-tz/Vulnscan01"><i class="fa-solid fa-square-arrow-up-right"></i></i></a>
+                        </div>
+                    </div>
+                    <div class="projeto">
+                        <img src="portfolio.png">
+                        <div class="icone">
+                            <h3>Portfólio</h3>
+                            <p>Site básico programado do zero.</p>
+                            <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></i></a>
+                        </div>
+                    </div>
+                    <div class="projeto">
+                        <img src="candycrush.png">
+                        <div class="icone">
+                            <h3>CandyCrushClone</h3>
+                            <p>Um jogo simples no estilo candy crush feito em java.</p>
+                            <a href="https://github.com/malware-tz/CandyCrushClone"><i class="fa-solid fa-square-arrow-up-right"></i></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://github.com/malware-tz" class="botao">Veja Mais</a>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright © Gustavo Muniz.</p>
+        </div>
+
+        <script>
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add('active-link');
+
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+
+        </script>
+    </body>
+
+</html>
